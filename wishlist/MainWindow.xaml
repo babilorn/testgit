@@ -1,0 +1,25 @@
+﻿<Window x:Class="wishlist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wishlist"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="248.562" Width="410.398">
+    <Grid Margin="-47,0,0,0" HorizontalAlignment="Left" Width="450" Height="178" VerticalAlignment="Top">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="90,54,0,0" TextWrapping="Wrap" Text="รายได้" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="90,84,0,0" TextWrapping="Wrap" Text="รายจ่าย" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="90,117,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_income" HorizontalAlignment="Left" Height="23" Margin="145,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtout" HorizontalAlignment="Left" Height="23" Margin="145,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtwant" HorizontalAlignment="Left" Height="23" Margin="178,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="270,57,0,0" TextWrapping="Wrap" Text="บาท/วัน" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="270,91,0,0" TextWrapping="Wrap" Text="บาท/วัน" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3_Copy1" HorizontalAlignment="Left" Margin="303,120,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" RenderTransformOrigin="-0.299,0.499"/>
+        <Button x:Name="bt_sumary" Content="คำนวณ" HorizontalAlignment="Left" Margin="90,155,0,0" VerticalAlignment="Top" Width="75" Click="bt_sumary_Click"/>
+        <TextBlock x:Name="textBlock3_Copy2" HorizontalAlignment="Left" Margin="170,157,0,0" TextWrapping="Wrap" Text="คุณต้องเก็บเงินทั้งหมด" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_sum" HorizontalAlignment="Left" Height="23" Margin="275,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_sum_TextChanged" IsReadOnly="True"/>
+        <TextBlock x:Name="textBlock3_Copy3" HorizontalAlignment="Left" Margin="400,159,0,0" TextWrapping="Wrap" Text="วัน" VerticalAlignment="Top" RenderTransformOrigin="1.619,0.454"/>
+
+    </Grid>
+</Window>
